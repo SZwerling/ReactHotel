@@ -1,5 +1,6 @@
 body {
   font-family: 'Raleway', sans-serif;
+  background-color: whitesmoke;
 }
 
 h1, h2, h3, .card-body>.card-title {
@@ -21,15 +22,18 @@ h2 {
 }
 
 .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+
+#carouselButton {
+  z-index: 100;
   position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);  
-  z-index: 10;
-  color: #fff;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, .8);
-  background-color: rgba(0, 0, 0, .2);
-}
+  right: 0;
+  bottom: 0; }
+
+  .carousel-item > img { 
+    width: 100%; 
+  }
 
 .row-content {
   padding: 50px 0;
@@ -38,14 +42,24 @@ h2 {
 }
 
 .site-footer {
-  background-image: linear-gradient(#CEC8FF, white);
+  background-image: linear-gradient(#919988, #97a8bb);
   padding: 20px 0;
+}
+
+.site-footer .list-unstyled a:link {
+  color: white;
+  background-color: transparent;
+}
+
+.site-footer .btn-link {
+  color: white;
+  background-color: transparent;
 }
 
 .jumbotron {
   margin: 0;
   padding: 10px;
-  background-image: linear-gradient(to right, #e437ba, #1630d5, #ff004a);
+  background-image: linear-gradient(to right, #919988, #97a8bb, white);
   color: white;
 }
 
@@ -55,4 +69,63 @@ h2 {
 
 .navbar-dark {
   background-color: grey;
+}
+
+.buttons-container {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+
+}
+
+.buttons-item {
+  background: #222;
+  height: 50px;
+  min-width: 150px;
+  border: none;
+  border-radius: 10px;
+  color: #eee;
+  font-size: 40px;
+  font-family: 'Cookie', cursive;
+  position: relative;
+  transition: 1s;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-top: 5px;
+}
+
+.buttons-item {
+  width: 5px;
+  height: 5px;
+  background: transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+  transition: 500ms;
+}
+
+.buttons-item {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.buttons-item:hover {
+  background: transparent;
+}
+
+.buttons-item:hover #circle {
+  height: 50px;
+  width: 150px;
+  left: 0;
+  border-radius: 0;
+  border-bottom: 2px solid #eee;
 }
