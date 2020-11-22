@@ -62,6 +62,7 @@ class Header extends Component {
                 <Jumbotron fluid>
                     <div className="container">
                         <div className="row">
+                            <NavbarBrand className="mr-auto" href="/"><img src="https://res.cloudinary.com/dpmxxbau5/image/upload/v1604704356/React_Hotel_Logo_fzsilb.png" height="100" width="100" alt="React Hotel Logo" /></NavbarBrand>
                             <div className="col">
                                 <h1>React Hotel</h1>
                                 <h2>Relaxtion Chain Reaction</h2>
@@ -72,7 +73,7 @@ class Header extends Component {
 
                 <Navbar dark sticky="top" expand="md">
                     <div className="container">
-                        <NavbarBrand className="mr-auto" href="/"><img src="https://res.cloudinary.com/dpmxxbau5/image/upload/v1604704356/React_Hotel_Logo_fzsilb.png" height="100" width="100" alt="React Hotel Logo" /></NavbarBrand>
+                        
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar>
@@ -125,7 +126,7 @@ class Header extends Component {
                             <FormGroup row>          
                                 <Label htmlFor="date-input" md={2}>Date</Label>
                                 <Col md={10}>
-                                    <Input type="date" value="2020-11-10" id="date-input" 
+                                    <Input type="date" name="date" value="2020-11-10" id="date-input" 
                                     placeholder="date"
                                     value={this.state.date}
                                     onChange={this.handleInputChange} />

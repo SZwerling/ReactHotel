@@ -7,8 +7,6 @@ import {
   CarouselCaption,
   Button
 } from 'reactstrap';
-
- 
 import itemsArray from './CarouselImages';
 
 
