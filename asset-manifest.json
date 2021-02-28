@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/ReactHotel/static/css/main.8ac71cea.chunk.css",
+    "main.js": "/ReactHotel/static/js/main.376546a4.chunk.js",
+    "main.js.map": "/ReactHotel/static/js/main.376546a4.chunk.js.map",
+    "runtime-main.js": "/ReactHotel/static/js/runtime-main.36d6b9dc.js",
+    "runtime-main.js.map": "/ReactHotel/static/js/runtime-main.36d6b9dc.js.map",
+    "static/css/2.681682aa.chunk.css": "/ReactHotel/static/css/2.681682aa.chunk.css",
+    "static/js/2.36f406cf.chunk.js": "/ReactHotel/static/js/2.36f406cf.chunk.js",
+    "static/js/2.36f406cf.chunk.js.map": "/ReactHotel/static/js/2.36f406cf.chunk.js.map",
+    "static/js/3.ce2df512.chunk.js": "/ReactHotel/static/js/3.ce2df512.chunk.js",
+    "static/js/3.ce2df512.chunk.js.map": "/ReactHotel/static/js/3.ce2df512.chunk.js.map",
+    "index.html": "/ReactHotel/index.html",
+    "static/css/2.681682aa.chunk.css.map": "/ReactHotel/static/css/2.681682aa.chunk.css.map",
+    "static/css/main.8ac71cea.chunk.css.map": "/ReactHotel/static/css/main.8ac71cea.chunk.css.map",
+    "static/js/2.36f406cf.chunk.js.LICENSE.txt": "/ReactHotel/static/js/2.36f406cf.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.css": "/ReactHotel/static/media/fontawesome-webfont.f691f37e.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.36d6b9dc.js",
+    "static/css/2.681682aa.chunk.css",
+    "static/js/2.36f406cf.chunk.js",
+    "static/css/main.8ac71cea.chunk.css",
+    "static/js/main.376546a4.chunk.js"
+  ]
+}
