@@ -22,7 +22,24 @@ h2 {
 }
 
 .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.5); }
+  max-width: 65%;
+  width:100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  right: 0;
+}
+
+
+.carousel-item > img { 
+  width: 100%; 
+}
+
+.carousel-item {
+  width: 100%;
+}
+
+.carousel {
+  width: 100%;
+}
 
 
 #carouselButton {
@@ -31,9 +48,7 @@ h2 {
   right: 0;
   bottom: 0; }
 
-  .carousel-item > img { 
-    width: 100%; 
-  }
+  
 
 .row-content {
   padding: 50px 0;
@@ -68,7 +83,7 @@ h2 {
 }
 
 .navbar-dark {
-  background-color: grey;
+  background-color: #0F4C81;
 }
 
 .buttons-container {

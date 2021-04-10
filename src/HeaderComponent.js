@@ -60,7 +60,7 @@ class Header extends Component {
         return (
             <React.Fragment>
                 <Jumbotron fluid>
-                    <div className="container">
+                    <div className="container-fluid">
                         <div className="row">
                             <NavbarBrand className="mr-auto" href="/"><img src="https://res.cloudinary.com/dpmxxbau5/image/upload/v1604704356/React_Hotel_Logo_fzsilb.png" height="100" width="100" alt="React Hotel Logo" /></NavbarBrand>
                             <div className="col">

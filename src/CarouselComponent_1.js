@@ -4,14 +4,13 @@ import {
   CarouselItem,
   CarouselControl,
   CarouselIndicators,
-  CarouselCaption,
-  Button
+  CarouselCaption
 } from 'reactstrap';
 import itemsArray from './CarouselImages';
 
 
 
-class MyCarousel extends React.Component {
+class MyCarousel_1 extends React.Component {
     constructor(props){
         super(props);
         this.state = {
@@ -21,17 +20,12 @@ class MyCarousel extends React.Component {
         }
         this.handleNext = this.handleNext.bind(this);
         this.handlePrevious = this.handlePrevious.bind(this);
-        this.goToIndex = this.goToIndex.bind(this);
+      
     }
 
     componentDidMount(){
         console.log(this.state.animating);
     }
-    goToIndex(newIndex){
-        const { animating } = this.state;
-        if (animating) return;
-        this.setState({ activeIndex: newIndex });
-      }
 
     handleNext(){
         const { animating, activeIndex, itemsIndex } = this.state;
@@ -54,11 +48,6 @@ class MyCarousel extends React.Component {
     }
 
 
-    changeIndex(id){
-      this.setState({itemsIndex: id});
-    }
-
-
     render(){
         const { activeIndex, itemsIndex } = this.state;
         const slides = itemsArray[itemsIndex].map((item) => {
@@ -78,15 +67,8 @@ class MyCarousel extends React.Component {
           });
         
           return (
-            <div className='container'>
-              <div className="row row-content">
-                <div className="col-md-8 mx-auto">
-                  <div className='buttons-container'>
-                    <Button className="button-item" onClick={() => this.changeIndex(0)}>Rooms</Button>
-                    <Button className="button-item" onClick={() => this.changeIndex(1)}>Amenities</Button>
-                    <Button className="button-item" onClick={() => this.changeIndex(2)}>Nightlife</Button>
-                  </div>
-                
+            
+                <div className="col-md-6">
                   <Carousel
                     activeIndex={activeIndex}
                     next={this.handleNext}
@@ -98,10 +80,9 @@ class MyCarousel extends React.Component {
                     <CarouselControl direction="next" directionText="Next" onClickHandler={this.handleNext} />
                   </Carousel>
                 </div>
-              </div>
-            </div>
+            
           );
         }
 }
 
-export default MyCarousel;
+export default MyCarousel_1;
